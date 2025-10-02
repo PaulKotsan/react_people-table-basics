@@ -9,7 +9,7 @@ import { HomePage } from './components/Loader/pages/HomePage';
 import { App } from './App';
 import { PeoplePage } from './components/Loader/pages/PeoplePage';
 import { NotFoundPage } from './components/Loader/pages/NotFoundPage';
-import { PeopleTable } from './components/Loader/pages/PeopleTable';
+import { PersonDetails } from './components/Loader/pages/PersonDetails';
 
 export const Root = () => (
   <Router>
@@ -18,7 +18,7 @@ export const Root = () => (
       <Route path="/" element={<App />}>
         <Route index element={<HomePage />} />
         <Route path="people" element={<PeoplePage />}>
-          <Route path="/people/:slug" element={<PeopleTable />} />
+          <Route path=":slug" element={<PersonDetails />} />
         </Route>
 
         <Route path="home" element={<Navigate to="/" replace />} />
