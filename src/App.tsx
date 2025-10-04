@@ -15,11 +15,11 @@ export const App = () => (
     >
       <div className="container">
         <div className="navbar-brand">
-          <NavLink className={getLinkClass} to="/">
+          <NavLink end className={getLinkClass} to="/">
             Home
           </NavLink>
 
-          <NavLink className={getLinkClass} to="people">
+          <NavLink end className={getLinkClass} to="people">
             People
           </NavLink>
         </div>
